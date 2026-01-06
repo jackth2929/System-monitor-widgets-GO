@@ -1,4 +1,4 @@
-# GlassWidget (Light Mode Edition)
+# System-monitor-widgets-GO
 
 A compact, elegant system monitoring widget for Windows, built with **Go (Wails)** and **Vue 3**.  
 Designed with a "Milky White" Glassmorphism aesthetic, optimized for **Light Mode** desktop environments.
