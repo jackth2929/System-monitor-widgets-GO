@@ -26,7 +26,7 @@ const clockTimer = ref(null)
 const updateTime = () => {
     const now = new Date()
     currentTime.value = now.toLocaleTimeString('en-US', { hour12: false, hour: '2-digit', minute: '2-digit', second: '2-digit' })
-    currentDate.value = now.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric', year: 'numeric' })
+    currentDate.value = now.toLocaleDateString('zh-CN', { year: 'numeric', month: 'long', day: 'numeric' })
 }
 
 const formatBytes = (bytes, decimals = 1) => {
@@ -84,7 +84,7 @@ onUnmounted(() => {
     <header class="drag-region glass-panel p-3 px-4 rounded-xl flex justify-between items-center cursor-move">
         <div class="flex flex-col">
              <div class="text-2xl font-bold tracking-widest font-mono leading-none text-slate-900">{{ currentTime }}</div>
-             <div class="text-[10px] text-slate-500 uppercase tracking-tighter mt-1">{{ currentDate }}</div>
+             <div class="text-sm text-slate-500 mt-1">{{ currentDate }}</div>
         </div>
         <div class="text-right">
             <div class="font-bold text-xs leading-tight text-slate-800">{{ stats.username }}</div>
