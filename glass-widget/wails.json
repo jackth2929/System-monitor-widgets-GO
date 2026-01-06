@@ -1,0 +1,35 @@
+{
+  "name": "glass-widget",
+  "outputfilename": "glass-widget",
+  "frontend:install": "npm install",
+  "frontend:build": "npm run build",
+  "frontend:dev:watcher": "npm run dev",
+  "frontend:dev:serverUrl": "auto",
+  "author": {
+    "name": "Gemini",
+    "email": "gemini@google.com"
+  },
+  "info": {
+    "companyName": "Gemini",
+    "productName": "GlassWidget",
+    "productVersion": "1.0.0",
+    "copyright": "Copyright 2026"
+  },
+  "wailsjsdir": "./frontend/src",
+  "version": "2",
+  "application": {
+    "isSingleInstance": true,
+    "wailsVersion": "v2.8.0"
+  },
+  "assetdir": "frontend/dist",
+  "windows": {
+      "width": 450,
+      "height": 380,
+      "resizable": false,
+      "frameless": true,
+      "transparent": true,
+      "alwaysOnTop": true,
+      "backgroundColour": "#00000000",
+      "theme": "Dark"
+  }
+}
